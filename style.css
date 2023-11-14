@@ -1,0 +1,197 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+:root {
+	--Violet: hsl(257, 40%, 49%);
+	--Soft-Magenta: rgb(232, 130, 232);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 10%;
+	background-color: var(--Violet);
+	background-image: url(images/bg-mobile.svg);
+	background-size: contain;
+	background-position: top left;
+	background-repeat: no-repeat;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+}
+
+.site-header {
+	line-height: 0;
+	text-align: left;
+	margin-bottom: 20%;
+}
+
+.site-logo {
+	width: 40%;
+}
+
+.illustration-image-container {
+	line-height: 0;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 4vw;
+}
+
+.main-content {
+	text-align: center;
+}
+
+.main-content h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.5em;
+}
+
+.huddle-purpose-description {
+	color: hsla(0, 0%, 100%, 0.95);
+	margin-bottom: 1.5em;
+	line-height: 1.5em;
+}
+
+.registration-button {
+	width: 65%;
+	border-radius: 5em;
+	border-width: 0.01em;
+	color: var(--Soft-Magenta);
+	box-shadow: 0.1em 0.3em 1em -0.5em black;
+	background-color: white;
+}
+
+.registration-button:hover,
+.registration-button:focus {
+	background-color: var(--Soft-Magenta);
+}
+
+.registration-page {
+	display: inline-block;
+	width: 100%;
+	padding: 6%;
+	text-decoration: none;
+}
+
+.registration-page:hover,
+.registration-page:focus {
+	color: hsla(0, 0%, 100%, 0.7);
+}
+
+.illustration-image-container {
+	margin-bottom: 15%;
+}
+
+/* Footer section */
+
+.social-media-handles {
+	margin: 25% auto 10% auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 4%;
+}
+
+.social-media-handles a {
+	flex-basis: calc(4%);
+	display: inline-flex;
+	align-items: center;
+	width: 3em;
+	line-height: 0;
+	box-sizing: content-box;
+	padding: 2.5%;
+	border: 0.0834em solid white;
+	border-radius: 50%;
+}
+
+img {
+	width: 100%;
+}
+
+@media (min-width: 765px) {
+	body {
+		background-image: url(images/bg-desktop.svg);
+		background-size: cover;
+		padding: 5%;
+		/* height: fit-content; */
+	}
+
+	.site-header {
+		margin-bottom: 6%;
+	}
+
+	.site-logo {
+		width: 17%;
+	}
+
+	.main-container {
+		font-size: 2vw;
+		flex-direction: row-reverse;
+		gap: 4%;
+	}
+
+	.main-content {
+		flex-basis: 40%;
+	}
+
+	.main-content {
+		text-align: left;
+	}
+
+	.main-content h1 {
+		font-size: 1.25em;
+		padding-right: 2em;
+	}
+
+	.main-content p {
+		font-size: 0.6em;
+		padding-right: 0;
+		color: hsla(0, 0%, 100%, 0.8);
+	}
+
+	.registration-button {
+		width: 40%;
+		font-size: 0.65em;
+	}
+
+	.registration-page {
+		padding: 8%;
+	}
+
+	.illustration-image-container {
+		flex-basis: 60%;
+		margin: 0;
+	}
+
+	.social-media-handles {
+		justify-content: flex-end;
+		margin: 3% auto 5% auto;
+		gap: 1.4%;
+	}
+
+	.social-media-handles a {
+		flex-basis: 1.2%;
+		padding: 0.8%;
+		border: 0.08em solid white;
+	}
+}
+
+.attribution {
+	font-size: 10px;
+	text-align: center;
+}
+.attribution a {
+	color: var(--Soft-Magenta);
+}
